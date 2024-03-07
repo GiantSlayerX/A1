@@ -189,9 +189,8 @@ func main() {
 
 	patternMarker := regexp.MustCompile(`marker\.(\w+)\("(\w+)"\)`)
 	for _, goFile := range goFiles {
-		if strings.HasSuffix(goFile, "_test.go") {
-			// ok
-		} else if strings.HasSuffix(goFile, "integration_test_util/accounts.go") {
+		if strings.HasSuffix(goFile, "_test.go") || strings.HasSuffix(goFile, "integration_test_util/accounts.go") {
+			sed(goFile, "\""+newGoModule+"/rename_chain/marker\"", "")
 			// ok
 		} else {
 			continue
