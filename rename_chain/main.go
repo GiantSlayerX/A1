@@ -189,8 +189,9 @@ func main() {
 
 	patternMarker := regexp.MustCompile(`marker\.(\w+)\("(\w+)"\)`)
 	for _, goFile := range goFiles {
-		if strings.HasSuffix(goFile, "_test.go") || strings.HasSuffix(goFile, "integration_test_util/accounts.go") {
-			sed(goFile, "\""+newGoModule+"/rename_chain/marker\"", "")
+		if strings.HasSuffix(goFile, "_test.go") {
+			// ok
+		} else if strings.HasSuffix(goFile, "integration_test_util/accounts.go") {
 			// ok
 		} else {
 			continue
@@ -261,7 +262,7 @@ func main() {
 			}
 		}
 
-		sed(goFile, "\"github.com/VictorTrustyDev/nevermind/v12/rename_chain/marker\"", "")
+		sed(goFile, "\""+newGoModule+"/rename_chain/marker\"", "")
 	}
 
 	launchAppWithDirectStd("mv", path.Join("cmd", EvermintOg_ApplicationBinaryName), path.Join("cmd", constants.ApplicationBinaryName))
