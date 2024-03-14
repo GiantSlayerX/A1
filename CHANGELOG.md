@@ -69,6 +69,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 - (rename-chain) [#80](https://github.com/EscanBE/evermint/pull/80) Handle new cases of rename-chain with recent changes
 - (rpc) [#85](https://github.com/EscanBE/evermint/pull/85) Compute and return correct `transactionsRoot` and `receiptsRoot` hashes
 - (rename-chain) [#108](https://github.com/EscanBE/evermint/pull/108) Resolve compile error `*_test.go` after run rename chain
+- (ante) [#110](https://github.com/EscanBE/evermint/pull/110) Reject EVM txs which having negative value
 
 ### Client Breaking
 
