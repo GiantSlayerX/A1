@@ -55,6 +55,8 @@ Ref: https://keepachangelog.com/en/1.0.0/
 - (indexer) [#96](https://github.com/EscanBE/evermint/pull/96) Make EVMTxIndexer mandatory service, starts before Json-RPC
 - (test) [#100](https://github.com/EscanBE/evermint/pull/100) Add some edge test cases + benchmark tests
 - (evm) [#103](https://github.com/EscanBE/evermint/pull/103) General use zero gas config for EVM exec
+- (ante) [#110](https://github.com/EscanBE/evermint/pull/110) Reject EVM txs which having negative value
+- (ante) [#112](https://github.com/EscanBE/evermint/pull/112) Add some validation relates to number range for EVM txs
 
 ### Bug Fixes
 
@@ -69,7 +71,6 @@ Ref: https://keepachangelog.com/en/1.0.0/
 - (rename-chain) [#80](https://github.com/EscanBE/evermint/pull/80) Handle new cases of rename-chain with recent changes
 - (rpc) [#85](https://github.com/EscanBE/evermint/pull/85) Compute and return correct `transactionsRoot` and `receiptsRoot` hashes
 - (rename-chain) [#108](https://github.com/EscanBE/evermint/pull/108) Resolve compile error `*_test.go` after run rename chain
-- (ante) [#110](https://github.com/EscanBE/evermint/pull/110) Reject EVM txs which having negative value
 
 ### Client Breaking
 
