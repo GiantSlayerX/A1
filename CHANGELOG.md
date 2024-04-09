@@ -94,10 +94,28 @@ Ref: https://keepachangelog.com/en/1.0.0/
 - (evm) [#76](https://github.com/EscanBE/evermint/pull/76) Fix wrong Ethereum Tx type when convert to `MsgEthereumTx`
 - (deps) [#106](https://github.com/EscanBE/evermint/pull/106) Bump cosmos-sdk v0.47.8 and ibc v7.3.2
 - (deps) [#114](https://github.com/EscanBE/evermint/pull/114) Bump cosmos-sdk v0.47.10
+- (deps) [#117](https://github.com/EscanBE/evermint/pull/117) Bumps ibc-go to v7.4.0 which include patch for ASA-2024-007
 
 # Evermint changelog
 
 #### Note: Evermint was born for development and research purpose so maintainers do not support migration for new upgrade/breaking changes.
+
+## [v12.2.6] - 2024-04-09
+
+### State Machine Breaking
+
+- (deps) [#116](https://github.com/EscanBE/evermint/pull/116) Bumps ibc-go to v6.3.0 which include patch for ASA-2024-007
+
+## [v12.2.5] - 2024-03-14
+
+### Improvements
+
+- (ante) [#111](https://github.com/EscanBE/evermint/pull/111) Reject EVM txs which having negative value (backport #110)
+- (ante) [#113](https://github.com/EscanBE/evermint/pull/113) Add some validation relates to number range for EVM txs (backport #112)
+
+### Bug Fixes
+
+- (rename-chain) [#109](https://github.com/EscanBE/evermint/pull/109) Resolve compile error `*_test.go` after run rename chain (backport #108)
 
 ## [v12.2.4] - 2024-01-31
 
