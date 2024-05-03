@@ -35,7 +35,7 @@ const (
 
 	DisplayDenom = "aigisos"
 
-	SymbolDenom = "aig"
+	SymbolDenom = "AIG"
 
 	BaseDenomExponent = 18
 )
